@@ -7,22 +7,21 @@ body {
   height: 100%;
 }
 
-#screen1 {
+#intro {
   font-family: 'Unkempt', 'cursive';
   font-size: 3em;
   text-align: center;
   background-color: orange;
 }
 
-#screen2 {
+#india {
   background-color: red;
-  height: 50px;
 }
 
-#screen3 {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/77/Puffer_Fish_DSC01257.JPG")
+#korea {
+  background-color: blue;
 }
 
-#screen4 {
-  /*background-color: purple;*/
+#england {
+  background-color: purple;
 }
