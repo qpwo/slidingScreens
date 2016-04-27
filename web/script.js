@@ -1,3 +1,7 @@
+// SCROLL TO TOP
+
+$('html,body').animate({ scrollTop: 0 }, 400);
+
 // SCREEN SLIDE STUFF
 
 var windowHeight = $(window).height(),
@@ -39,18 +43,18 @@ function rightArrowPressed() {
 
 document.onkeydown = function(evt) {
   "use strict";
+  evt.preventDefault();
   evt = evt || window.event;
   switch (evt.keyCode) {
-    case 65:
+    case 65: // a
     evt.preventDefault();
     leftArrowPressed();
     break;
-    case 68:
+    case 68: // d
     evt.preventDefault();
     rightArrowPressed();
     break;
-    case 70:
-    evt.preventDefault();
+    case 70: // f
     toggleFullScreen();
     break;
   }
@@ -78,3 +82,15 @@ function toggleFullScreen() {
     }
   }
 }
+
+// PAUSE OR PLAY VIDEO ON CLICK
+
+$("video").click(function (e) {
+    if(e.offsetY < ($(this).height() - 36)) // Check to see if controls where clicked
+    {
+        if(this.paused)
+            this.play();
+        else
+            this.pause();
+    }
+});
