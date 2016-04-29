@@ -1,7 +1,3 @@
-// SCROLL TO TOP
-
-$('html,body').animate({ scrollTop: 0 }, 400);
-
 // SCREEN SLIDE STUFF
 
 var windowHeight = $(window).height(),
